@@ -18,7 +18,7 @@ function Footer() {
         <div className="flex w-full max-w-sm items-center space-x-2">
           <Input type="email" placeholder="Emailni kiriting" />
           <Button type="submit" variant={"destructive"}>
-            Jo`natish
+            Jonatish
           </Button>
         </div>
       </div>

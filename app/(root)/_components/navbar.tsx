@@ -16,7 +16,7 @@ const Navbar = () => {
           <h1 className="text-2xl font-bold md:text-3xl">BegiDev</h1>
         </Link>
         <div className="flex items-center md:gap-8">
-          <div className="flex pr-4 text-[14.5px] md:text-base">
+          <div className="hidden md:flex pr-4 text-[14.5px] md:text-base gap-1">
             {navLinks.map((nav) => (
               <Link
                 key={nav.route}

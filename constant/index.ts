@@ -1,8 +1,8 @@
 import { Home, Newspaper } from "lucide-react";
 
 export const navLinks = [
-  { name: "Asosiy", route: "/", icon: Home },
-  { name: "Maqolalar", route: "/blog", icon: Newspaper },
+  { name: "Asosiy", route: "/", icon: Home, id: 0 },
+  { name: "Maqolalar", route: "/blog", icon: Newspaper, id: 1 },
 ];
 
 export const popularCategories = [
