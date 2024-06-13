@@ -5,11 +5,13 @@ import { ChildProps } from "@/types";
 
 function PageLayout({ children }: ChildProps) {
   return (
-    <main>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      <div className="container">{children}</div>
-      <Footer />
-    </main>
+      <div className="flex-grow">{children}</div>
+      <div className="mb-4">
+        <Footer />
+      </div>
+    </div>
   );
 }
 
