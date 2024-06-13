@@ -6,15 +6,22 @@ import { Button } from "@/components/ui/button";
 
 function HomePage() {
   return (
-    <div className="md:max-w-[1000px] md:m-[auto] mt-[160px] md:mt-48">
-      <div className="flex items-center container gap-7">
-        <Image src={Avatar} alt="Avatar" className="hidden md:block md:rounded-full md:h-36 md:w-36" />
-        <div className="leading-10 font-sourceSans">
-          <h1 className="text-[42px] font-bold leading-10	 text-[rgba(0, 0, 0, .85)] tracking-wide">
+    <div className="max-w-full md:max-w-[1000px] mx-auto px-4">
+      <div className="flex flex-col md:flex-row items-center gap-7 mt-[120px] md:mt-[190px]">
+        <div className="w-[120px] h-[120px] md:w-36 md:h-36 relative">
+          <Image
+            src={Avatar}
+            alt="Avatar"
+            layout="fill"
+            className="rounded-full"
+          />
+        </div>
+        <div className="text-center md:text-left">
+          <h1 className="text-4xl md:text-5xl font-bold text-[rgba(0, 0, 0, .85)] tracking-wide mt-[-25px] md:mt-0">
             Begzod Abduhamidov
           </h1>
-          <p className="text-3xl py-4 opacity-50">Front-end developer</p>
-          <div className="flex gap-3">
+          <p className="text-xl py-2 md:text-3xl opacity-50">Front-end developer</p>
+          <div className="flex justify-center md:justify-start gap-3">
             <Link href={"https://www.instagram.com/begi.dev/"}>
               <Instagram />
             </Link>
@@ -30,9 +37,11 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="mt-7 ml-8">
+      <div className="mt-4 flex justify-center md:justify-start">
         <Button variant="destructive">Po`stlarni o`qish</Button>
-        <Button className="ml-3" variant={'outline'}>Men haqimda.</Button>
+        <Button className="ml-3" variant={"outline"}>
+          Men haqimda.
+        </Button>
       </div>
     </div>
   );
