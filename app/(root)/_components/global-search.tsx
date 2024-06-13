@@ -14,7 +14,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 function GlobalSearch() {
-  const pathName = usePathname()
+  const pathName = usePathname();
 
   return (
     <Sheet>

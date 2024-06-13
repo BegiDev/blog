@@ -8,7 +8,7 @@ function PageLayout({ children }: ChildProps) {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <div className="flex-grow">{children}</div>
-      <div className="mb-4">
+      <div className="mb-2">
         <Footer />
       </div>
     </div>
