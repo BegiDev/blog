@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { Instagram, Github, Youtube, Linkedin } from 'lucide-react';
-import Avatar from '../../../public/avatar.jpg'; 
-import { Button } from '@/components/ui/button';
+import Image from "next/image";
+import Link from "next/link";
+import { Instagram, Github, Youtube, Linkedin } from "lucide-react";
+import Avatar from "../../../public/avatar.jpg";
+import { Button } from "@/components/ui/button";
 
 export default function HomePage() {
   return (
@@ -41,15 +41,16 @@ export default function HomePage() {
       </div>
       <div className="mt-3 animate-slide-in-right">
         <p className="text-[16px] md:text-[20px] text-center md:text-left font-medium py-0 md:py-2 md:tracking-wide">
-          Turli xildagi bloglarni o'qish istagi sizda bo`lsa ayan shu site siz
-          uchun :-  
+          Turli xildagi bloglarni o&apos;qish istagi sizda bo`lsa ayan shu site
+          siz uchun :-
         </p>
+
         <div className="mt-6 md:mt-4 flex justify-center md:justify-start">
           <Button variant="destructive">
-            <Link href={'/blog'}>Po`stlarni o`qish</Link>
+            <Link href={"/blog"}>Po`stlarni o`qish</Link>
           </Button>
           <Button className="ml-3" variant={"outline"}>
-            <Link href={'/about'}>Men haqimda.</Link>
+            <Link href={"/about"}>Men haqimda.</Link>
           </Button>
         </div>
       </div>
