@@ -14,7 +14,7 @@ function Footer() {
           </Button>
         </div>
       </div>
-      <p className="text-center pt-2 font-base font-normal font-poppins">
+      <p className="text-center pt-4 font-base font-normal font-poppins">
         © 2024 begzod.com
       </p>
     </footer>

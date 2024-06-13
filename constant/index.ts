@@ -1,4 +1,4 @@
-import { Home, Newspaper, CodeXml} from "lucide-react";
+import { Home, Newspaper} from "lucide-react";
 
 export const navLinks = [
   { name: "Asosiy", route: "/", icon: Home, id: 0 },
@@ -19,11 +19,12 @@ export const popularTags = [
 ];
 
 export const learningTechnology = [
-  {name: "HTML", icon: CodeXml},
-  {name: "CSS", icon: CodeXml},
-  {name: "Tailwind css", icon: CodeXml},
-  {name: "Sass", icon: CodeXml},
-  {name: "JavaScript", icon: CodeXml},
-  {name: "React", icon: CodeXml},
-  {name: "Next Js", icon: CodeXml},
+  {name: "HTML",},
+  {name: "CSS",},
+  {name: "Tailwind css",},
+  {name: "Sass",},
+  {name: "JavaScript",},
+  {name: "TypeScript",},
+  {name: "React",},
+  {name: "Next Js",},
 ]

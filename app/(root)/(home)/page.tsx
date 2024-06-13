@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 export default function HomePage() {
   return (
     <div className="max-w-full md:max-w-[1000px] mx-auto px-4">
-      <div className="flex flex-col md:flex-row items-center gap-7 mt-[120px] md:mt-[190px]">
+      <div className="flex flex-col md:flex-row items-center gap-7 mt-[95px] md:mt-[190px]">
         <div className="w-[125px] h-[125px] md:w-36 md:h-36 relative animate-slide-in-top">
           <Image
             src={Avatar}

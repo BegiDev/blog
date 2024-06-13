@@ -9,14 +9,14 @@ function AboutMe() {
         <h3 className="mt-4 text-base">
           Mening ismin Begzod Front-end dasturchiman, yoshim ?da. Jizzax
           shahrida tavallud topganman. ITga 2022-yil kuzda kirib kelganman va
-          shu kungacha ITni self-study o`rganib kelmoqdaman.
+          shu kungacha ITni self-study o`rganib kelmoqdaman.git push -u
         </h3>
         <div className="mt-5">
           <h4 className="font-medium ">O`rgangan texnalogyalarim:</h4>
           <div className="mt-2">
             {learningTechnology.map((item) => (
               <Badge variant={"destructive"} key={item.name} className="mr-2 px-3 py-1">
-                {item.name} 
+                {item.name}
               </Badge>
             ))}
           </div>
