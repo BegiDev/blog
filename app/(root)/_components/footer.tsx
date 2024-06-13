@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="flex py-24 flex-col container max-w-2xl">
+    <footer className="flex pt-10 flex-col container max-w-2xl">
       <ul className="flex justify-center text-center font-poppins gap-1 md:gap-4">
         {navLinks.map((item) => (
           <Link href={item.route} key={item.route} className="hover:bg-blue-300/20 px-[4px] py-[4px] md:px-1 cursor-pointer rounded-sm transition-colors font-medium text-[15px] md:text-base">

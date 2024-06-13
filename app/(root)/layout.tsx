@@ -1,8 +1,9 @@
-import { ChildProps } from "@/types";
+import React from "react";
 import Navbar from "./_components/navbar";
 import Footer from "./_components/footer";
+import { ChildProps } from "@/types";
 
-function Layout({ children }: ChildProps) {
+function PageLayout({ children }: ChildProps) {
   return (
     <main>
       <Navbar />
@@ -12,4 +13,4 @@ function Layout({ children }: ChildProps) {
   );
 }
 
-export default Layout;
+export default PageLayout;

@@ -1,4 +1,4 @@
-import { Home, Newspaper } from "lucide-react";
+import { Home, Newspaper, Youtube, Github, Instagram  } from "lucide-react";
 
 export const navLinks = [
   { name: "Asosiy", route: "/", icon: Home, id: 0 },

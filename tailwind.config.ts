@@ -60,6 +60,7 @@ const config = {
       },
       fontFamily: {
         poppins: ["var(--font-poppins)"],
+        sourceSans: ["var(--font-source-sans)"],
       },
       borderRadius: {
         lg: "var(--radius)",
