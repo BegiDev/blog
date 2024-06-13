@@ -42,7 +42,7 @@ export default function HomePage() {
       <div className="mt-3 animate-slide-in-right">
         <p className="text-[16px] md:text-[20px] text-center md:text-left font-medium py-0 md:py-2 md:tracking-wide">
           Turli xildagi bloglarni o'qish istagi sizda bo`lsa ayan shu site siz
-          uchun :)
+          uchun :-  
         </p>
         <div className="mt-6 md:mt-4 flex justify-center md:justify-start">
           <Button variant="destructive">
