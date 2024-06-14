@@ -11,8 +11,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import parse from "html-react-parser";
-import { content } from "@/types";
-import Link from "next/link";
+import { content } from "@/constant";
 
 function SlugPage({ params }: { params: { slug: string } }) {
   return (

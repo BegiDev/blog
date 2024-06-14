@@ -9,7 +9,7 @@ function AboutMe() {
         <h3 className="mt-4 text-base">
           Mening ismin Begzod Front-end dasturchiman, yoshim ?da. Jizzax
           shahrida tavallud topganman. ITga 2022-yil kuzda kirib kelganman va
-          shu kungacha ITni self-study o`rganib kelmoqdaman.git push -u
+          shu kungacha ITni self-study o`rganib kelmoqdaman.
         </h3>
         <div className="mt-5">
           <h4 className="font-medium ">O`rgangan texnalogyalarim:</h4>

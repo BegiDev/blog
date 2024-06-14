@@ -30,32 +30,5 @@ export const learningTechnology = [
   { name: "Next Js" },
 ];
 
-export const blogs = [
-  {
-    title: "10 examples of social media posts to get inspired",
-    description:
-      "You’ve probably heard it a dozen times before, but social media needs to be part of your online strategy. Whether you have a website, personal blog or webshop, social media allows you to reach and connect with your audience. To get new people into contact with you and to stay top of mind with your current customer base or followers. But where to start? In this post, we’ll show you 10 examples of different social media posts to help you get inspired and reach your audience in a way that fits your brand!",
-    author: "Begzod",
-    tags: ["Posts Ideas"],
-    date: "Apr 9, 2024",
-    image: "/blogs/blog1.avif",
-  },
-  {
-    title: "1. The Cheesecake Factory: Use humor and great photos",
-    description:
-      "The Cheesecake Factory is an American chain of restaurants, localized around the world. If you’re not familiar with it, you may recognize the name from the hit series The Big Bang Theory. They have a large following on Facebook and regularly post about food that’s on their menu. These posts get a lot of engagement, due to the great images used and the funny text accompanying them.",
-    author: "Begzod", 
-    tags: ["Math tick"],
-    date: "Apr 12, 2022",
-    image: "/blogs/blog2.avif",
-  },
-  {
-    title: "Is AI content helping or hurting your website?",
-    description:
-      "New AI content tools are popping up left and right. These tools can help you write a social post, or a whole blog post, answer any question, or even create a brand-new image! This is great and helpful when you only have a little time or need more inspiration. But the big question is, are AI tools actually helping us? Should we be using them to create our content? This blog post will discuss AI content and why we should be mindful of how we use it.",
-    author: "Begzod",
-    tags: ["Front-end"],
-    date: "May 12, 2022",
-    image: "/blogs/blog3.avif",
-  },
-];
+export const content =
+  "<p></p><table><tbody><tr><td><h5><em><strong>Segment</strong></em></h5></td><td><h5><strong>Long-fruited</strong></h5></td></tr><tr><td><h5><em><strong>Purpose</strong></em></h5></td><td><h5><strong>For fresh consumption and processing</strong></h5></td></tr><tr><td><h5><em><strong>Precocity</strong></em></h5></td><td><h5><strong>Early ripening, 60-63 days after planting seedlings</strong></h5></td></tr><tr><td><h5><em><strong>Plant</strong></em></h5></td><td><h5><strong>Vigorous, open</strong></h5></td></tr><tr><td><h5><em><strong>Fruit</strong></em></h5></td><td><h5><strong>Elongated teardrop-shaped, with dense pulp</strong></h5></td></tr><tr><td><h5><em><strong>Color</strong></em></h5></td><td><h5><strong>Dark purple to black</strong></h5></td></tr><tr><td><h5><em><strong>Weight</strong></em></h5></td><td><h5><strong>200-250 g</strong></h5></td></tr><tr><td><h5><em><strong>Taste</strong></em></h5></td><td><h5><strong>Good</strong></h5></td></tr></tbody></table><p></p><blockquote><strong>ADVANTAGES</strong></blockquote><ul><li><div><strong>Early ripeness</strong></div></li><li><div><strong>Very high yield potential</strong></div></li><li><div><strong>Attractive fruits</strong></div></li><li><div><strong>Great for slicing</strong></div></li></ul><blockquote><strong>RECOMMENDATIONS FOR GROWING</strong></blockquote><ul><li><div><strong>Designed for cultivation in open ground,</strong></div><div><strong>as well as in plastic greenhouses</strong></div></li></ul><p></p>";
