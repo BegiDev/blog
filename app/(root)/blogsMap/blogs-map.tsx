@@ -3,22 +3,22 @@ import { IBlog } from "@/types";
 import { CalendarDays, Clock, Dot, Minus } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { format } from "date-fns"
+import { format } from "date-fns";
 import { getReadingTime } from "@/lib/utils";
 
 function BlogsMap(blog: IBlog) {
   return (
     <Link
-      href={"/"}
-      className="container max-w-full md:max-w-[1000px] mx-auto border-t border-b py-7 grid gap-4 group grid-cols-1 md:grid-cols-2"
+      href={`blog/${blog.slug}`}
+      className="container max-w-full md:max-w-[1000px] mx-auto border-t border-b py-7 grid gap-4 group grid-cols-1 md:grid-cols-2 items-center"
     >
-      <div className="relative rounded-md">
+      <div className="relative rounded-md flex items-center justify-center">
         <Image
           width={600}
           height={300}
           src={blog.image.url}
           alt={blog.title}
-          className="rounded-md bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-75 w-full h-full"
+          className="rounded-md bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-75 w-full h-full object-cover"
         />
       </div>
       <div className="flex flex-col space-y-4">
@@ -34,25 +34,30 @@ function BlogsMap(blog: IBlog) {
           </div>
         </div>
 
-        <h2 className="text-3xl max-md:text-2xl font-poppins font-medium group-hover:opacity-75">
+        <h2 className="text-3xl max-md:text-2xl font-poppins font-medium group-hover:opacity-75 pb-5 break-words">
           {blog.title}
         </h2>
-        <p className="text-muted-foreground line-clamp-3 font-sourceSans font-normal">{blog.description}</p>
+
+        <p className="text-muted-foreground line-clamp-3 font-sourceSans font-normal">
+          {blog.description}
+        </p>
 
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
-            <Image 
+            <Image
               src={blog.author.image.url}
               alt="author"
               width={40}
               height={40}
               className="object-cover rounded-sm"
             />
-            <p className="font-sourceSans font-medium">By: {blog.author.name}</p>
+            <p className="font-sourceSans font-medium">
+              By: {blog.author.name}
+            </p>
           </div>
           <Dot />
           <div className="flex items-center gap-2">
-            <Badge variant={'secondary'}>{blog.tag.name}</Badge>
+            <Badge variant={"secondary"}>{blog.tag.name}</Badge>
           </div>
         </div>
       </div>

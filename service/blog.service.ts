@@ -30,6 +30,7 @@ export const getBlogs = async () => {
         content {
           html
         }
+        slug
       }
     }
   `;
@@ -38,3 +39,35 @@ export const getBlogs = async () => {
 
   return blogs
 };
+
+export const getDetailedBlog = async (slug: string) => {
+	const query = gql`
+		query MyQuery($slug: String!) {
+			blog(where: { slug: $slug }) {
+				author {
+					name
+					image {
+						url
+					}
+					bio
+				}
+				content {
+					html
+				}
+				createdAt
+				image {
+					url
+				}
+				slug
+				tag {
+					name
+					slug
+				}
+				title
+			}
+		}
+	`
+
+	const { blog } = await request<{ blog: IBlog }>(graphqlAPI, query, { slug })
+	return blog
+}
