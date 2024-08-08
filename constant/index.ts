@@ -3,7 +3,6 @@ import { Home, Newspaper } from "lucide-react";
 export const navLinks = [
   { name: "Asosiy", route: "/", icon: Home, id: 0 },
   { name: "Maqolalar", route: "/blog", icon: Newspaper, id: 1 },
-  { name: "Men haqimda", route: "/about", icon: Newspaper, id: 2 },
 ];
 
 export const popularCategories = [
