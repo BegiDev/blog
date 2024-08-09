@@ -7,13 +7,13 @@ function AboutMe() {
 			<h1 className='text-center text-4xl font-normal'>Men haqimda</h1>
 			<div className='border-t mt-6 font-sourceSans font-normal leading-7'>
 				<h3 className='mt-4 text-base'>
-					Hammaga salom, mening ismim Begzod. Jizzax shahrida 200*-yil
-					tug'ilganman. Hozirda Front-end dasturchiman, dasturlashga 2022-yil
-					kuz oylarida kirib kelganman. Dasturlashni self-study o'rganganman va
-					o'rganib kelmoqdaman.
+					Hammaga salom, mening ismim Begzod. Jizzax shahrida 200*&apos;-yil
+					tug&apos;ilganman. Hozirda Front-end dasturchiman, dasturlashga
+					2022-yil kuz oylarida kirib kelganman. Dasturlashni self-study
+					o&apos;rganganman va o&apos;rganib kelmoqdaman.
 				</h3>
 				<div className='mt-5'>
-					<h4 className='font-medium '>O`rgangan texnalogyalarim:</h4>
+					<h4 className='font-medium '>O&apos;rgangan texnalogyalarim:</h4>
 					<div className='mt-2'>
 						{learningTechnology.map(item => (
 							<Badge
