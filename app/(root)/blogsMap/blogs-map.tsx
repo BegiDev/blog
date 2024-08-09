@@ -34,12 +34,16 @@ function BlogsMap(blog: IBlog) {
 						</div>
 					</div>
 
-					<h2 className='text-[28px] leading-9 max-md:text-2xl font-poppins font-medium group-hover:opacity-75 pb-1 md:pb-[13.5px] break-words'>
-						{blog.title}
+					<h2 className='text-[28px] break-words leading-9 max-md:text-2xl font-poppins font-medium group-hover:opacity-75 pb-1 md:pb-[13.5px]'>
+						{blog.title.length > 45
+							? `${blog.title.slice(0, 65)}...`
+							: blog.title}
 					</h2>
 
 					<p className='text-muted-foreground line-clamp-3 font-sourceSans font-normal'>
-						{blog.description}
+						{blog.description.length > 50
+							? `${blog.description.slice(0, 120)}...`
+							: blog.description}
 					</p>
 				</div>
 			</Link>
