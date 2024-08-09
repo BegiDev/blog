@@ -50,7 +50,7 @@ function HomePage() {
 						<Link href={'/blog'}>Po`stlarni o`qish</Link>
 					</Button>
 					<Button className='ml-3' variant={'outline'}>
-						<Link href={'/about'}>Men haqimda.</Link>
+						Men haqimda.
 					</Button>
 				</div>
 			</div>
