@@ -36,7 +36,7 @@ function BlogsMap(blog: IBlog) {
 
 					<h2 className='text-[28px] break-words leading-9 max-md:text-2xl font-poppins font-medium group-hover:opacity-75 pb-1 md:pb-[13.5px]'>
 						{blog.title.length > 45
-							? `${blog.title.slice(0, 65)}...`
+							? `${blog.title.slice(0, 85)}...`
 							: blog.title}
 					</h2>
 

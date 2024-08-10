@@ -17,10 +17,17 @@ import parse from 'html-react-parser'
 import { getDetailedBlog } from '@/service/blog.service'
 import { getReadingTime } from '@/lib/utils'
 import { format } from 'date-fns'
-import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert'
+import { Alert, AlertTitle } from '@/components/ui/alert'
+
+interface Blog {
+	title: string
+	image: { url: string }
+	content: { html: string }
+	createdAt: string
+}
 
 function SlugPage({ params }: { params: { slug: string } }) {
-	const [blog, setBlog] = useState<any>(null)
+	const [blog, setBlog] = useState<Blog | null>(null)
 	const [loading, setLoading] = useState(true)
 	const [showAlert, setShowAlert] = useState(false)
 
@@ -28,7 +35,7 @@ function SlugPage({ params }: { params: { slug: string } }) {
 		const siteUrl = window.location.href
 		navigator.clipboard.writeText(siteUrl)
 		setShowAlert(true)
-		setTimeout(() => setShowAlert(false), 3000) // Hide alert after 3 seconds
+		setTimeout(() => setShowAlert(false), 3000)
 	}, [])
 
 	useEffect(() => {

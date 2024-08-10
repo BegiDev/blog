@@ -1,5 +1,10 @@
 import { getBlogs } from '@/service/blog.service'
 import BlogsMap from '../blogsMap/blogs-map'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+	title: 'Barcha bloglar',
+}
 
 async function BlogsPage() {
 	const blogs = await getBlogs()
